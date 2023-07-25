@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/lnds/lab-ic-ms/api/database"
-	"github.com/lnds/lab-ic-ms/api/models"
+	"github.com/diazluisf/lab-ic-ms/movies-api/database"
+	"github.com/diazluisf/lab-ic-ms/movies-api/models"
 
 	"github.com/gofiber/fiber/v2"
 )
