@@ -1,4 +1,4 @@
-module github.com/lnds/lab-ic-ms/api
+module github.com/diazluisf/lab-ic-ms-2023/movies-api
 
 go 1.19
 
