@@ -30,3 +30,8 @@ El atributo `context` debe estar especificando el directorio para la construcci�
 
 #### Opcional:
     Al modificar la variable BIND_IP a `localhost` no se tiene respuesta al intentar consultar la api. Esto es debido a que se estaría configurando el servicio para escuchar solo en localhost, limitando el acceso desde fuera de la máquina en la que se encuentra el contenedor.
+
+## ETAPA 4
+La diferencia entre los atributos build del servicio movies-api y movies-front es que el servicio movies-api utiliza la opción context para especificar la ruta del directorio de compilación, mientras que el servicio movies-front solo especifica el nombre del directorio de compilación directamente. La opción context en el servicio movies-api permite especificar una ruta relativa al archivo docker-compose.yaml para el directorio de compilación.
+
+Si los atributos build para movies-api y movies-front se dejan iguales, no hay ninguna diferencia real en cuanto al funcionamiento de los servicios. Ambos aún utilizán el directorio especificado en ./movies-api y ./movies-front respectivamente para la compilación de las imágenes del contenedor

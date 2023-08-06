@@ -11,11 +11,16 @@ services:
       - movies-api
     environment:
       - PORT=${REACT_PORT}
+      - BIND_PORT
+      - REACT_APP_API_URI=http://localhost:$BIND_PORT
+    expose:
+      - ${REACT_PORT}
+    ports:
+      - ${REACT_PORT}:${REACT_PORT}
    
   movies-api:
     container_name: movies_api_container
-    build: 
-      context: ./movies-api
+    build: /movies-api
     image: movies_api
     command: "/movies-api -b ${BIND_IP} -p ${BIND_PORT}"
     environment:
