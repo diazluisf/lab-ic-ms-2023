@@ -34,7 +34,7 @@ Recuerda registrar tus respuestas en el archivo `RESPUESTAS.md`
 Modifica tu archivo .env agregando dos variables:
 
     - `BIND_IP`: asignale el valor `movies-api`
-    - `BIND_PORT`: asignale el valor `8000`
+    - `BIND_PORT`: asignale el valor `8000` o el valor que te indicó el profesor si estás ejecutando esto en clases.
 
 Con esto defines la ip y el puerto que usa el microservicio.
 
@@ -64,7 +64,7 @@ Tip: te recomiendo usar la herramienta [curl](https://curl.se) de este modo:
     curl -v http://localhost:8000/movies
 
 
-
+Nota: si estás corriendo esto en el laboratorio usa la URL que te indique el profesor.
 
 Si todo está ok haz un commit con la corrección y el archivo `RESPUESTAS.md`.
 
